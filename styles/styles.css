@@ -1,0 +1,26 @@
+:root {
+    --rowNum: -1;
+    --colNum: -1;
+}
+.pad {
+    display: inline-grid;
+    grid-template-rows: repeat(var(--rowNum), auto);
+    grid-template-columns: repeat(var(--colNum), auto);
+    width: 750px;
+    height: 750px;
+    border-color: red;
+    border-width: 30px;
+    border-style: solid;
+}
+.square {
+    grid-row-start: auto;
+    grid-column-start: auto;
+    width: 750 / var(--rowNum);
+    height: 750 / var(--colNum);
+    background-color: grey;
+}
+#shake {
+    width: 200px;
+    height: 100px;
+    font-size: larger;
+}
